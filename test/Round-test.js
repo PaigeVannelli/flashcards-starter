@@ -1,6 +1,5 @@
 const chai = require('chai');
 const Card = require('../src/Card');
-const Turn = require('../src/Turn');
 const Round = require('../src/Round');
 const testData = require('../src/test-data');
 const Deck = require('../src/Deck');
@@ -18,7 +17,6 @@ describe('Round', function() {
     });
 
     it(`Should be a function`, function() {
-        const round = new Round();
         expect(Round).to.be.a(`function`);
     });
 
